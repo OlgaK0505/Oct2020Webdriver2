@@ -4,16 +4,17 @@ public class JavaEx01 {
 
     @Test
     public void test01001() {
-        Phone myphone = new Phone("lg");
+        Phone myphone = new Phone("lg"); //create
         String osDevice = myphone.getOs();
         System.out.println(osDevice);
 
-        Phone myphone1 = new Phone("iphone 12 pro");
-        String osDevice1 = myphone1.getOs();
-        System.out.println(osDevice1);
+        myphone.brand = "iphone 12 pro";
+        osDevice = myphone.getOs();
+        System.out.println(osDevice);
 
-        Phone myphone2 = new Phone("iphone 122 pro");
-        String osDevice2 = myphone2.getOs();
-        System.out.println(osDevice2);
+        myphone.brand = "iphone 122 pro";
+        osDevice = myphone.getOs();
+        System.out.println(osDevice);
+
     }
 }
